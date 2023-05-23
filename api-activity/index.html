@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>APIHub</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#!">APIHub</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center my-5">
+                            <h1 class="display-5 fw-bolder text-white mb-2">Conecte-se ao futuro da tecnologia</h1>
+                            <p class="lead text-white-50 mb-4">Desbravando o mundo das APIs: Explorando uma variedade de temas para aprimorar suas soluções!</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Features section-->
+        <section class="py-5 border-bottom" id="features">
+            <div class="container px-5 my-5">
+                <div class="row gx-5">
+                    <div class="col-lg-8 mb-5 mb-lg-0">
+                        <div class="feature  bg-gradient text-white rounded-3 mb-3"><img src="./img/luck.png" class="luck" alt=""></i></div>
+                        <h2 class="h4 fw-bolder">Perguntas e Respostas Interativas</h2>
+                        <p class="lead mb-0">Desafie o Conhecimento com Diversão!</p>
+                        <div id="question"></div>
+                        <div  id="options"></div>
+                        <a class="text-decoration-none" href="#!">
+                            <button class="btn btn-outline-success btn-md" onclick="getQuestion()">Próxima Pergunta</button>
+                            <p id="result"></p>
+                        </a>
+                    </div>
+                   
+                    <div class="col-lg-4">
+                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-3"><i class="bi bi-arrow-right"></i></div>
+                        <h2 class="h4 fw-bolder">Abrindo as Portas da Inovação!</h2>
+                        <p>Continue navegando e desbrave o universo das APIs, onde a inovação e a criatividade se encontram.</p>
+                        <a class="text-decoration-none" href="#cotação">
+                            Continuar
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pricing section-->
+        <section id="cotação"></section>
+        <section class="bg-light py-5 border-bottom">
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Cotação de moedas</h2>
+                    <p class="lead mb-0">Mantenha-se à frente do mercado com nossas atualizações de cotação de moedas em tempo real.</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <!-- Pricing card free-->
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card mb-5 mb-xl-0">
+                            <div class="card-body p-5">
+                                <div class="small text-uppercase fw-bold text-muted">1 Euro</div>
+                                <div class="mb-3">
+                                    
+                                    <span class="display-4 fw-bold">R$<span id="exchange-rate-eur"></span>
+                                    
+                                </div>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        <strong>EUR</strong>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        €
+                                    </li>
+                                   
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card mb-5 mb-xl-0">
+                            <div class="card-body p-5">
+                                <div class="small text-uppercase fw-bold">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    1 Dólar
+                                </div>
+                                <div class="mb-3">
+                                    <span class="display-4 fw-bold">R$<span id="exchange-rate-usd"></span>
+                                    
+                                </div>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        <strong>USD</strong>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        $
+                                    </li>
+                                    
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pricing card enterprise-->
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card">
+                            <div class="card-body p-5">
+                                <div class="small text-uppercase fw-bold text-muted">1 Libra esterlina</div>
+                                <div class="mb-3">
+                                    <span class="display-4 fw-bold">R$<span id="exchange-rate-gbp"></span>
+                                   
+                                </div>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        <strong>GBP</strong>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        £
+                                    </li>
+                                    
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials section-->
+   
+        <section class="py-5 border-bottom">
+            <div class="container px-5 my-5 px-5">
+                <div class="text-center mb-5">
+                    <div class="feature  bg-gradient text-white rounded-3 mb-3"><div id="globo"></div></i></div>
+                    <h2 class="fw-bolder">Explore os Países do Mundo</h2>
+                    <p class="lead mb-0">Conheça os países do mundo e suas fascinantes peculiaridades!</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                       
+                        <button class="btn btn-outline-success btn-lg" id="botao" onclick="getCountryData()">Obter Informações do País</button>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="country-code" type="text" placeholder="Nome" />
+                                <label for="name">Código do país (Ex: BR,US...)</label>
+                            </div>
+                            <div id="country-info" style="display: none;">
+                                <h2 id="country-name"></h2>
+                                <p><strong>Capital:</strong> <span id="country-capital"></span></p>
+                                <p><strong>População:</strong> <span id="country-population"></span></p>
+                                <p><strong>Idioma(s):</strong> <span id="country-languages"></span></p>
+                                <p><strong>Moeda(s):</strong> <span id="country-currencies"></span></p>
+                                <img id="country-flag" src="" alt="Bandeira do país">
+                            </div>
+                            <p id="error-message" class="error-message" style="display: none;"></p>
+                            
+                            
+                            
+                    </div>
+                </div>
+            </div>
+        </section>
+               
+
+        <!-- Contact section-->
+        <section class="bg-light py-5">
+            <div class="container px-5 my-5 px-5">
+                <div class="text-center mb-5">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-person"></i></div>
+                    <h2 class="fw-bolder">Gerar usuários aleatórios</h2>
+                    <p class="lead mb-0">Cada clique revela uma personalidade única!</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <button class="btn btn-outline-primary btn-lg" id="botao" onclick="getRandomUser()">Gerar Usuário</button>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Nome" readonly />
+                                <label for="name">Nome</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="text" placeholder="E-mail" readonly />
+                                <label for="name">E-mail</label>
+                            </div>
+                           
+                            
+                            
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; APIHub 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
